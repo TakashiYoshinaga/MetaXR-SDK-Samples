@@ -7239,7 +7239,6 @@ MonoBehaviour:
   - {fileID: 6123172287870185636}
   - {fileID: 8324145201325371502}
   - {fileID: 8346358097935564905}
-  - {fileID: 3586781472159683662}
   - {fileID: 9192411425564806533}
   _activeState: {fileID: 0}
   _candidateComparer: {fileID: 0}
@@ -29312,7 +29311,6 @@ MonoBehaviour:
   - {fileID: 6123172287849806425}
   - {fileID: 8324145201707612619}
   - {fileID: 8346358098267140238}
-  - {fileID: 3586781471809104179}
   - {fileID: 4365506037210455641}
   _activeState: {fileID: 0}
   _candidateComparer: {fileID: 0}
@@ -54182,7 +54180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &7492845265225822175
 GameObject:
   m_ObjectHideFlags: 0
@@ -54202,7 +54200,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &7507881718749793049
 MonoBehaviour:
   m_ObjectHideFlags: 0
