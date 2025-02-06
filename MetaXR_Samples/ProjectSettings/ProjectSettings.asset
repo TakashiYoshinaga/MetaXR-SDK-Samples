@@ -142,6 +142,8 @@ PlayerSettings:
   bundleVersion: 0.1.0
   preloadedAssets:
   - {fileID: 11400000, guid: fa32461d57093fb49831a051314b34da, type: 2}
+  - {fileID: -8789648379100530044, guid: 5b97bbd3bba03ec438eba31f9f1ed24c, type: 2}
+  - {fileID: 11400000, guid: 65e40cd1d897dd14a870637b3fbafd3d, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -844,8 +846,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: MetaXR_Samples
-  metroPackageVersion: 
+  metroPackageName: MetaXRSamples
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -853,7 +855,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: MetaXR_Samples
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: MetaXR_Samples
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
