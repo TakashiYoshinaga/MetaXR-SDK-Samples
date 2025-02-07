@@ -15,24 +15,21 @@ public class AnchorManager : MonoBehaviour
     public async void CreateAnchor(){
         bool result = await CreateAnchorAsync();
         if(result){
-            SaveAnchorAsync();
+            await SaveAnchorAsync();
         }
     }
     
-    public void LoadAnchor(){
-        LoadAnchorAsync();
+    public async void LoadAnchor(){
+        await LoadAnchorAsync();
     }
-    public void DeleteAnchor(){
-        DeleteAnchorAsync();
+    public async void DeleteAnchor(){
+        await DeleteAnchorAsync();
     }
 
     private async Task<bool> CreateAnchorAsync(){
         Debug.Log("*****Creating anchor");
         //Destroy the previous anchor if it exists
-        if(_anchor){
-           Destroy(_anchor);
-           _anchor = null;
-        }
+        await DeleteAnchorAsync();
         //Create a new anchor
         _anchor = gameObject.AddComponent<OVRSpatialAnchor>();
         if(!await _anchor.WhenLocalizedAsync()){
@@ -45,7 +42,7 @@ public class AnchorManager : MonoBehaviour
         }
     }
 
-    private async void SaveAnchorAsync(){
+    private async Task SaveAnchorAsync(){
         if(!_anchor){
             Debug.Log("*****No anchor to save");
             return;
@@ -61,19 +58,23 @@ public class AnchorManager : MonoBehaviour
             Debug.Log("*****Failed to save anchor: " + result.Status);
         }
     }
-    private async void LoadAnchorAsync(){
+    private async Task LoadAnchorAsync(){
         var uuid = PlayerPrefs.GetString(_saveAnchorKey,"");
-        if(string.IsNullOrEmpty(uuid)){
-            Debug.Log("*****No anchor to load");
+        if (!System.Guid.TryParse(uuid, out var parsedUuid) || parsedUuid == System.Guid.Empty)
+        {
+            Debug.Log("*****Invalid or empty UUID");
             return;
         }
+        //Load unbound anchors with the UUID
         var uuids = new System.Guid[1]{new System.Guid(uuid)};
         var unboundAnchors = new List<OVRSpatialAnchor.UnboundAnchor>();
         var result = await OVRSpatialAnchor.LoadUnboundAnchorsAsync(uuids,unboundAnchors);
-        if(result.Success){
+        if(result.Success && unboundAnchors.Count > 0){
             Debug.Log("*****Anchor loaded with UUID: " + uuid);
-            //For this sample, we only load one anchor
+           
+            //Load the first unbound anchor because anchor is loaded with only one UUID
             var unboundAnchor = unboundAnchors[0];
+
             //Localize the anchor
             var localizationResult = await unboundAnchor.LocalizeAsync();
             //Check if the anchor was localized
@@ -89,7 +90,8 @@ public class AnchorManager : MonoBehaviour
                 //Set the position and rotation of the object to the pose of the anchor
                 _uuid = new System.Guid(uuid);
                 transform.SetPositionAndRotation(pose.position,pose.rotation);
-                if(!_anchor){
+                if (!TryGetComponent(out _anchor))
+                {
                     _anchor = gameObject.AddComponent<OVRSpatialAnchor>();
                 }
                 unboundAnchor.BindTo(_anchor);
@@ -98,14 +100,15 @@ public class AnchorManager : MonoBehaviour
             }
 
         }else{
-            Debug.Log("*****Failed to load anchor: " + result.Status);
+            Debug.Log("*****Failed to load anchor or no UnboundAnchors: " + result.Status);
         }
     }
-    private async void DeleteAnchorAsync(){
+    private async Task DeleteAnchorAsync(){
         if(!_anchor){
             Debug.Log("*****No anchor to delete");
             return;
         }
+        
         var result = await _anchor.EraseAnchorAsync();
         if(result.Success){
             Debug.Log("*****Anchor deleted with UUID: " + _uuid);
@@ -115,5 +118,6 @@ public class AnchorManager : MonoBehaviour
         }else{
             Debug.Log("*****Failed to delete anchor: " + result.Status);
         }
+        await Task.Yield();
     }
 }
