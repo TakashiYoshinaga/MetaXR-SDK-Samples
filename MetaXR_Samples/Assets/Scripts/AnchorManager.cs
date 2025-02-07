@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Meta.WitAi.Events.Editor;
 using UnityEngine;
 
 public class AnchorManager : MonoBehaviour
@@ -11,6 +12,10 @@ public class AnchorManager : MonoBehaviour
     OVRSpatialAnchor _anchor;
     //UUID of the anchor
     System.Guid _uuid;
+
+    public void SetSaveAnchorKey(string saveAnchorKey){
+        _saveAnchorKey = saveAnchorKey;
+    }
 
     public async void CreateAnchor(){
         bool result = await CreateAnchorAsync();
