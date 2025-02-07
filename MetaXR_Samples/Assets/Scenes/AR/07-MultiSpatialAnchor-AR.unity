@@ -6056,7 +6056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f57fe1924f4efe44aae3b26b3be6dc8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _saveAnchorKey: anchor
+  _saveAnchorKey: 
 --- !u!114 &161703531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6073,7 +6073,7 @@ MonoBehaviour:
   _loadAnchorButton: {fileID: 1931334470}
   _deleteAnchorButton: {fileID: 1042621576}
   _anchorManager: {fileID: 161703530}
-  _saveAnchorKey: anchor
+  _saveAnchorKey: anchor_0
 --- !u!1 &162174685
 GameObject:
   m_ObjectHideFlags: 0
@@ -78807,7 +78807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f57fe1924f4efe44aae3b26b3be6dc8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _saveAnchorKey: anchor
+  _saveAnchorKey: 
 --- !u!114 &2111469025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78824,7 +78824,7 @@ MonoBehaviour:
   _loadAnchorButton: {fileID: 888956169}
   _deleteAnchorButton: {fileID: 68536348}
   _anchorManager: {fileID: 2111469024}
-  _saveAnchorKey: anchor
+  _saveAnchorKey: anchor_1
 --- !u!54 &2111469026
 Rigidbody:
   m_ObjectHideFlags: 0
