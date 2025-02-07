@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Meta.WitAi.Events.Editor;
 using UnityEngine;
 
 public class AnchorManager : MonoBehaviour
