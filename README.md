@@ -8,7 +8,7 @@
 ### 03-FarManipulation-AR / VR
 [![](https://img.youtube.com/vi/2xgMdiKcJLo/0.jpg)](https://www.youtube.com/watch?v=2xgMdiKcJLo)
 
-### 04-UiInteraction-AR / VR
+### 04-UI Interaction-AR / VR
 [![](https://img.youtube.com/vi/_gd3JA_L0HA/0.jpg)](https://www.youtube.com/watch?v=_gd3JA_L0HA)
 
 ### 05-RayInteraction-AR / VR
