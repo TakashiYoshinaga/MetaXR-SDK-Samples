@@ -20,6 +20,13 @@
 ### 07-MultiSpatialAnchor-AR
 [![](https://img.youtube.com/vi/1zgUlxVs3aE/0.jpg)](https://www.youtube.com/watch?v=1zgUlxVs3aE)
 
+### 08-SpatialMesh-AR
+[Notice!]  
+To test this feature, open the **Settings** on your **Quest 3 / Quest 3S** and perform a pre-room scan following the steps below:  
+**Environment setup** → **Space setup** → **Set up**  
+  
+[![](https://img.youtube.com/vi/UQFJ9Kt1Sz4/0.jpg)](https://www.youtube.com/watch?v=UQFJ9Kt1Sz4)
+
 # Tutorial
 [English]  
 https://tks-yoshinaga.hatenablog.com/entry/2024/04/13/195853  
