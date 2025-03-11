@@ -24,7 +24,7 @@
                 "LightMode" = "UniversalForward"
             }
             Blend SrcAlpha OneMinusSrcAlpha
-            ZWrite Off
+           
             
             HLSLPROGRAM
             #pragma vertex vert
