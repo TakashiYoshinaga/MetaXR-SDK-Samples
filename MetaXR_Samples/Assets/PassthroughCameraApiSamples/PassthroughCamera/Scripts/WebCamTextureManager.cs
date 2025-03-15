@@ -106,7 +106,8 @@ namespace PassthroughCameraSamples
                         //     Camera2: SecurityException java.lang.SecurityException: validateClientPermissionsLocked:1325: Callers from device user 0 are not currently allowed to connect to camera "66"
                         //     Camera2: Timeout waiting to open camera.
                         // Waiting for one frame is important and prevents the bug.
-                        yield return null;
+                        for(int i = 0; i < 200; i++)
+                            yield return null;
                         webCamTexture.Play();
                         var currentResolution = new Vector2Int(webCamTexture.width, webCamTexture.height);
                         if (RequestedResolution != Vector2Int.zero && RequestedResolution != currentResolution)
