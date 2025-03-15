@@ -22,4 +22,5 @@
   <uses-permission android:name="com.oculus.permission.USE_ANCHOR_API" />
   <uses-permission android:name="com.oculus.permission.IMPORT_EXPORT_IOT_MAP_DATA" />
   <uses-feature android:name="com.oculus.feature.PASSTHROUGH" android:required="false" />
+  <uses-permission android:name="horizonos.permission.HEADSET_CAMERA" />
 </manifest>
