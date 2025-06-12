@@ -14,13 +14,19 @@
 ### 05-RayInteraction-AR / VR
 [![](https://img.youtube.com/vi/T1ENjhBP9-w/0.jpg)](https://www.youtube.com/watch?v=T1ENjhBP9-w)
 
-### 06-SingleSpatialAnchor-AR
+### 06-HandPoseManipulation-AR / VR
+[![](https://img.youtube.com/vi/ts9KvhjWxNo/0.jpg)](https://www.youtube.com/watch?v=ts9KvhjWxNo)   
+
+### 07-PalmMenu-AR / VR
+[![](https://img.youtube.com/vi/cbm4VepVm2I/0.jpg)](https://www.youtube.com/watch?v=cbm4VepVm2I)   
+
+### 08-SingleSpatialAnchor-AR
 [![](https://img.youtube.com/vi/9ISEB5f6TyM/0.jpg)](https://www.youtube.com/watch?v=9ISEB5f6TyM)
 
-### 07-MultiSpatialAnchor-AR
+### 09-MultiSpatialAnchor-AR
 [![](https://img.youtube.com/vi/1zgUlxVs3aE/0.jpg)](https://www.youtube.com/watch?v=1zgUlxVs3aE)
 
-### 08-SpatialMesh-AR
+### 10-SpatialMesh-AR
 [Notice!]  
 To test this feature, open the **Settings** on your **Quest 3 / Quest 3S** and perform a pre-room scan following the steps below:  
 **Environment setup** → **Space setup** → **Set up**  
