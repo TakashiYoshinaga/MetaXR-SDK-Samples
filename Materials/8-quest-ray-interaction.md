@@ -12,11 +12,11 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 
 **[VR版]**
 
-[MetaQuestでオブジェクトを表示](https://tks-yoshinaga.hatenablog.com/entry/quest-dev-vr)
+[MetaQuestでオブジェクトを表示](2-quest-vr-object-display.md)
 
 **[AR版]**
 
-[MetaQuestのパススルーを使ったAR表示](https://tks-yoshinaga.hatenablog.com/entry/quest-dev-ar)
+[MetaQuestのパススルーを使ったAR表示](3-quest-ar-passthrough.md)
 
 ## 1. シーンを複製
 
@@ -93,4 +93,4 @@ Rayとの相互作用を実現するため、オブジェクトにRayとの相�
 
 ## 5. Meta XR SDKに関する記事一覧はこちら
 
-[はじめようMeta XR SDKでQuestアプリ開発](https://tks-yoshinaga.hatenablog.com/entry/quest-dev-index)
+[はじめようMeta XR SDKでQuestアプリ開発](0-main.md)

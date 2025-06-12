@@ -9,7 +9,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 
 なお本記事は下記の続きとなります。設定等に違いがないかご確認ください。
 
-[Meta XR SDKのインストールとプロジェクトの設定](https://tks-yoshinaga.hatenablog.com/entry/quest-dev-setup)
+[Meta XR SDKのインストールとプロジェクトの設定](1-meta-xr-sdk-setup.md)
 
 ## 1. シーンの作成
 
@@ -97,7 +97,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 | **Rotation** | 0 | 20 | 0 |
 | **Scale** | 0.3 | 0.3 | 0.3 |
 
-![Transform設定画面](https://cdn-ak.f.st-hatena.com/images/fotolife/t/tks_yoshinaga/20240406/20240406103430.jpg)
+![Transform設定画面](./materials/2/03.jpg)
 
 ## 5. 動作確認
 

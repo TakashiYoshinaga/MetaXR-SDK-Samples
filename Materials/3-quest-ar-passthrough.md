@@ -9,7 +9,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 
 なお本記事は下記で作成したシーンを編集してAR化します。まずはこちらをお読みください。ただし既にMeta XR SDKを使ったVRのシーンをお持ちの場合は下記記事の確認は不要です。
 
-[MetaQuestでオブジェクトを表示](https://tks-yoshinaga.hatenablog.com/entry/quest-dev-vr)
+[MetaQuestでオブジェクトを表示](2-quest-vr-object-display.md)
 
 ## 1. シーンを複製
 
