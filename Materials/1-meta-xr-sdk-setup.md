@@ -134,8 +134,8 @@
 
 ここまでの内容でプロジェクトの基本的な設定が完了しました。次はVRで3Dオブジェクトを表示する方法について解説します。
 
-[MetaQuestでオブジェクトを表示](https://tks-yoshinaga.hatenablog.com/entry/quest-dev-vr)
+[MetaQuestでオブジェクトを表示](2-quest-vr-object-display.md)
 
 ## 8. Meta XR SDKに関する記事一覧はこちら
 
-[はじめようMeta XR SDKでQuestアプリ開発](https://tks-yoshinaga.hatenablog.com/entry/quest-dev-index)
+[はじめようMeta XR SDKでQuestアプリ開発](0-main.md)

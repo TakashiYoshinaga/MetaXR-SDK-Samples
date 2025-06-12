@@ -124,8 +124,8 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 
 ここまでの内容でVRでの基本的なオブジェクト表示が実現できました。次はパススルー機能を使ったAR表示について解説します。
 
-[MetaQuestのパススルーを使ったAR表示](https://tks-yoshinaga.hatenablog.com/entry/quest-dev-ar)
+[MetaQuestのパススルーを使ったAR表示](3-quest-ar-passthrough.md)
 
 ## 7. Meta XR SDKに関する記事一覧はこちら
 
-[はじめようMeta XR SDKでQuestアプリ開発](https://tks-yoshinaga.hatenablog.com/entry/quest-dev-index)
+[はじめようMeta XR SDKでQuestアプリ開発](0-main.md)
