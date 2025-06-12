@@ -23,7 +23,7 @@ Meta Quest 3の登場により、Mixed Reality（MR）アプリケーション�
 - [遠くにあるオブジェクトをつかむ](7-quest-far-object-grab.md)
 - [Ray交差判定を用いたインタラクション](8-quest-ray-interaction.md)
 - [UnityのUI操作 (ボタンを例に)](9-quest-unity-ui-interaction.md)
-- [Hand Poseを用いたオブジェクトマニピュレーション](10-quest-hand-pose-manipulation.md)
+- [カスタムHand Poseを使った自然な操作](10-quest-hand-pose-manipulation.md)
 - [PalmMenuを使った手のひらUI](11-quest-palm-menu.md)
 
 ほか、思いついたネタがあれば掲載していきたいと思います。

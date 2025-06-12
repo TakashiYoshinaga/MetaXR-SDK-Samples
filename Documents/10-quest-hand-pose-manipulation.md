@@ -1,4 +1,4 @@
-# MetaQuestでHand Poseを用いたオブジェクトマニピュレーション
+# MetaQuestでカスタムHand Poseを使った自然な操作
 
 ## 0. 本記事の内容
 
