@@ -18,7 +18,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 - **File -> New Scene**をクリック
 - New Sceneウィンドウで**Basic(URP)**を選択し**Create**をクリック
 
-![新しいシーン作成画面](./materials/2/00.jpg)
+![新しいシーン作成画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/2/00.jpg?raw=true)
 
 - **File -> Save**をクリック
 - シーン名を設定し保存  
@@ -33,7 +33,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 - 検索エリア直下のSearch:から**All**を選択
 - **OVRCameraRig**をHierarchyにドラッグ&ドロップ
 - Project Setup Tool Fix Availableが表示された場合はFixをクリック
-![Project Setup Tool Fix](./materials/2/00-1.jpg)
+![Project Setup Tool Fix](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/2/00-1.jpg?raw=true)
 
 **[OVR Managerの設定]**
 
@@ -59,7 +59,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 - 検索エリア直下のSearch:から**All**を選択
 - **OVRInteractionComprehensive**をOVRCameraRigにドラッグアンドドロップし、子要素として追加
 
-![OVRInteractionComprehensive](./materials/2/01.jpg)
+![OVRInteractionComprehensive](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/2/01.jpg?raw=true)
 
 **[ハンドトラッキングの設定]**
 
@@ -83,7 +83,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 - 他のオブジェクトを選択していない状態でHierarchyの空白を右クリック
 - **3D Object -> Cube**をクリック
 
-![Cube作成画面](./materials/2/02.jpg)
+![Cube作成画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/2/02.jpg?raw=true)
 
 **[位置とサイズの調整]**
 
@@ -97,7 +97,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 | **Rotation** | 0 | 20 | 0 |
 | **Scale** | 0.3 | 0.3 | 0.3 |
 
-![Transform設定画面](./materials/2/03.jpg)
+![Transform設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/2/03.jpg?raw=true)
 
 ## 5. 動作確認
 

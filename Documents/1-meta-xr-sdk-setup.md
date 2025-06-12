@@ -17,14 +17,14 @@
   *本記事では**MetaXRSDK_Samples**と設定
 - **Create project**をクリックしてプロジェクトを作成
 
-![Unity プロジェクト作成画面](./materials/1/01.jpg)
+![Unity プロジェクト作成画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/1/01.jpg?raw=true)
 
 **[Androidプラットフォームへの切り替え]**
 
 - **File -> Build Profiles**をクリック
 - Build Profilesウィンドウで**Android**を選択して**Switch Platform**をクリック
 
-![Build Settings画面](./materials/1/02.jpg)
+![Build Settings画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/1/02.jpg?raw=true)
 
 - 左の列の**Scene List**をクリック
 - Scene ListからScenes/SampleSceneを右クリックで削除
@@ -42,14 +42,14 @@
 - Unity Editorに戻り、**Window -> Package Manager**をクリックしてPackage Managerを開く
 - **My Assets**をクリックし検索ウィンドウで**Meta**と入力
 
-![Package Manager画面](./materials/1/03.jpg)
+![Package Manager画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/1/03.jpg?raw=true)
 
 - **Meta XR All in One SDK**を選択し、**Install**をクリック  
   *初めてこのアセットを利用する場合はまず**Download**をクリック。SDKのダウンロード終了後にインストール。
 - インストール後、Editorの再起動を求められるので**Restart Editor**をクリック
 
 
-![Editor再起動画面](./materials/1/04.jpg)
+![Editor再起動画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/1/04.jpg?raw=true)
 
 - 再起動後、Interaction SDK OpenXR Upgradeウィンドウが表示されることがあるが現時点では無視して閉じる
 
@@ -60,7 +60,7 @@
 - **OpenXR Plugin**をインストール
 - Meta XR Feature Setに関する設定を促すダイアログが表示されるので**Yes**をクリック
 
-![XRFeature Set](./materials/1/05.jpg)
+![XRFeature Set](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/1/05.jpg?raw=true)
 
 - Project Settingsウィンドウが表示されるが今は無視でOK
 
@@ -79,7 +79,7 @@
 - 念のためプロジェクトを一度閉じて再度開く
 - Interaction SDK OpenXR Upgradeダイアログが表示されたら**Use OpenXR Hand**をクリック
 
-![Interaction SDK OpenXR Upgrade](./materials/1/06.jpg)
+![Interaction SDK OpenXR Upgrade](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/1/06.jpg?raw=true)
 
 **[XR Plugin Managementの設定]**
 
@@ -88,7 +88,7 @@
 - **Android**タブを選択し、**OpenXR**のチェックをON (他はOFFでOK)
 - Meta Quest Link(PC VR for Windows)を使用する場合は**Windows**タブからも**OpenXR**のチェックをONにする
 
-![XR Plugin設定画面](./materials/1/07.jpg)
+![XR Plugin設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/1/07.jpg?raw=true)
 
 **[Project Validationの実行]**
 
@@ -120,7 +120,7 @@
 - **Player**を選択
 - **Company Name**と**Product Name**を設定
 
-![Player設定画面](./materials/1/08.jpg)
+![Player設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/1/08.jpg?raw=true)
 
 **[パッケージ名の設定]**
 
@@ -128,7 +128,7 @@
 - **Other Settings**を開く
 - IdentificationのOverride Default Package Nameのチェックを**OFF**
 
-![Android設定画面](./materials/1/09.jpg)
+![Android設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/1/09.jpg?raw=true)
 
 ## 7. 次のステップ
 

@@ -57,7 +57,7 @@ Hand Poseマニピュレーションのデモンストレーション用にCylin
 
 - CylinderをGrabRootの子要素になるようにドラッグして移動
 
-![オブジェクト構造](./materials/10/00.jpg)
+![オブジェクト構造](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/10/00.jpg?raw=true)
 
 - Cylinderオブジェクトの位置やサイズを下記のように変更  
   Position: **0 0 0**  
@@ -93,7 +93,7 @@ Hand Poseマニピュレーションのデモンストレーション用にCylin
 - **Hand used for recording poses**で形状を記録したい手(例: RightInteractions)を選択
 - **GameObject to record the hand grab poses for**で**GrabRoot**を選択
 
-![Hand Grab Pose Recorder設定画面](./materials/10/01.jpg)
+![Hand Grab Pose Recorder設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/10/01.jpg?raw=true)
 
 ## 6. 手の形状の記録
 
@@ -108,7 +108,7 @@ Hand Poseマニピュレーションのデモンストレーション用にCylin
 - Cylinderをつかむ真似をした状態でキーボードの**Spaceキー**を押下
 - 手の形状が記録されます
 
-![手の形状記録画面](./materials/10/02.jpg)
+![手の形状記録画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/10/02.jpg?raw=true)
 
 **[記録データの保存]**
 
@@ -118,7 +118,7 @@ Hand Poseマニピュレーションのデモンストレーション用にCylin
 - 最後に**Load From Collection**をクリック
 - GrabRootの子要素に**HandGrabInteractable**が自動で追加される
 
-![HandGrabInteractable追加後](./materials/10/03.jpg)
+![HandGrabInteractable追加後](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/10/03.jpg?raw=true)
 
 ## 7. マニピュレーション機能の調整
 
@@ -167,4 +167,4 @@ Hand Grab Pose Recorderを使用することで、より複雑な手の形状や
 
 ## 10. Meta XR SDKに関する記事一覧はこちら
 
-[はじめようMeta XR SDKでQuestアプリ開発](0-main.md)
+[Meta XR SDK連載目次](0-main.md)

@@ -36,7 +36,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 - さらにGrab Interactableの**Rigidbody**にCubeをドラッグ&ドロップ  
   *前の記事でCubeに追加したRigidbodyを割り当てることでコントローラとCubeとの接触検知が利用される
 
-![Grab Interactable設定画面](./materials/6/00.jpg)
+![Grab Interactable設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/6/00.jpg?raw=true)
 
 **[手でつかむ]**
 
@@ -47,7 +47,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 - さらにHand Grab Interactableの**Rigidbody**にCubeをドラッグ&ドロップ  
   *前の記事でCubeに追加したRigidbodyを割り当てることで手とCubeとの接触検知が利用される
 
-![Hand Grab Interactable設定画面](./materials/6/01.jpg)
+![Hand Grab Interactable設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/6/01.jpg?raw=true)
 
 **[注意！]**  
 OVRCameraRigオブジェクトにアタッチされたOVR ManagerのHand Tracking SupportでControllerOnlyを選択しているとハンドトラッキングが動作しないためオブジェクトを手でつかむことができません。設定を必ず確認してください。
@@ -64,7 +64,7 @@ OVRCameraRigオブジェクトにアタッチされたOVR ManagerのHand Trackin
   *GripButtonが不要な場合はGripButtonのチェックを外す
 - 左手のコントローラ(LeftInteractions)についても同様の操作を行うことで、つかむ際に使用するボタンを設定可能
 
-![Trigger Manipulation](./materials/6/02.jpg)
+![Trigger Manipulation](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/6/02.jpg?raw=true)
 
 
 ## 4. 手の挙動の微調整 (オプション)

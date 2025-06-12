@@ -40,7 +40,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 - TMP Importerを閉じる
 - CanvasとEventSystemが追加されていることを確認
 
-![UI作成後のHierarchy](./materials/9/00.jpg)
+![UI作成後のHierarchy](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/9/00.jpg?raw=true)
 
 **[3D空間への配置設定]**
 
@@ -54,7 +54,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
   **Scale**      X: **0.003**   Y: **0.003**   Z: **0.003**  
   *図中の白い枠がCanvasのエリアを表しています
 
-![Canvas設定画面](./materials/9/01.jpg)
+![Canvas設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/9/01.jpg?raw=true)
 
 ## 3. CanvasをQuest対応にする
 
@@ -66,7 +66,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 - **Pointable**で検索し、候補に表示される**Pointable Canvas**をクリックして追加
 - 追加されたPointable CanvasのCanvasの右のエリアにHierarchy内の**Canvas**オブジェクトをドラッグ&ドロップ
 
-![Pointable Canvas設定画面](./materials/9/02.jpg)
+![Pointable Canvas設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/9/02.jpg?raw=true)
 
 **[EventSystemの設定]**
 
@@ -116,7 +116,7 @@ Meta XR SDKでは、UI（Canvas）と手やコントローラとの相互作用�
 - Element 0にSurfaceオブジェクトをドラッグ&ドロップ  
   *Bounds Clipperで設定した領域でクリッピングします
 
-![Surface設定画面](./materials/9/03.jpg)
+![Surface設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/9/03.jpg?raw=true)
 
 **[オプション]**
 - 最後にSufraceオブジェクトをCanvasにドラッグ&ドロップして子要素にします
@@ -146,7 +146,7 @@ UIがコントローラや手から出るRayに反応するか、近くで直接
 - ダイアログが表示されたら**ClippedPlaneSurface**を選択  
   *Clipped Plane Surfaceで設定された領域のみでインタラクションを可能にします
 
-![インタラクション選択画面](./materials/9/04.jpg)
+![インタラクション選択画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/9/04.jpg?raw=true)
 
 **[基本的なインタラクション確認]**
 
@@ -189,4 +189,4 @@ RayでもPokeでもボタンをクリックしたタイミングでCubeが消え
 
 ## 8. Meta XR SDKに関する記事一覧はこちら
 
-[はじめようMeta XR SDKでQuestアプリ開発](0-main.md)
+[Meta XR SDK連載目次](0-main.md)

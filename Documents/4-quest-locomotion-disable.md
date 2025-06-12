@@ -28,7 +28,7 @@
   - **ControllerTurnerInteractor**（視点回転機能）
   - **ControllerSlideInteractor**
 
-![LocomotionControllerInteractorGroup削除画面](./materials/4/00.jpg)
+![LocomotionControllerInteractorGroup削除画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/4/00.jpg?raw=true)
 
 **[左手コントローラーのロコモーション無効化]**
 

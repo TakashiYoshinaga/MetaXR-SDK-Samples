@@ -30,7 +30,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 - Quest Featuresの項目の中の**Passthrough Support**を**Supported**または**Required**に変更
 - Insight Passthrough & Guardian Boundaryという項目の中の**Enable Passthrough**のチェックを**ON**にする
 
-![パススルー設定画面](./materials/3/00.jpg)
+![パススルー設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/3/00.jpg?raw=true)
 
 **[パススルーレイヤーの追加]**
 
@@ -41,7 +41,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 - **OVRPassthroughLayer**をクリック
 - Inspectorに追加されたOVRPassthroughLayerの中の**Placement**を**Underlay**に変更
 
-![OVRPassthroughLayer設定画面](./materials/3/00-1.jpg)
+![OVRPassthroughLayer設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/3/00-1.jpg?raw=true)
 
 ## 3. カメラの背景設定
 
@@ -52,7 +52,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 - Hierarchy内でOVRCameraRigの子要素の**TrackingSpace**を開く
 - TrackingSpaceの子要素の**CenterEyeAnchor**を選択
 
-![CenterEyeAnchor選択画面](./materials/3/01.jpg)
+![CenterEyeAnchor選択画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/3/01.jpg?raw=true)
 
 **[背景の透明化]**
 
@@ -63,10 +63,10 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 | 設定項目 | 設定値 |
 |----------|--------|
 | **Background Type** | Solid Color |
-| **Background R** | 0 |
-| **Background G** | 0 |
-| **Background B** | 0 |
-| **Background A** | 0 |
+| **R** | 0 |
+| **G** | 0 |
+| **B** | 0 |
+| **A** | 0 |
 
 ## 4. 動作確認
 

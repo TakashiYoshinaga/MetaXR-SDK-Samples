@@ -48,7 +48,7 @@ Rayとの相互作用を実現するため、オブジェクトにRayとの相�
 - **RayInteractable**のSurfaceにCubeをドラッグ&ドロップ  
   *上記で作成した形状情報(Surface)をRayInteractableに登録
 
-![Ray Interactable設定画面](./materials/8/00.jpg)
+![Ray Interactable設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/8/00.jpg?raw=true)
 
 ## 3. Rayとのインタラクションのイベント取得
 
@@ -69,7 +69,7 @@ Rayとの相互作用を実現するため、オブジェクトにRayとの相�
   *TextMeshProが未インストールの場合はダイアログの案内に沿ってTextMeshProをインストール。(サンプルのインストールは不要)
 - Inspectorで下記のようにText(TMP)の設定を変更しCubeの上にテキストを表示
 
-![Text(TMP)設定画面](./materials/8/01.jpg)
+![Text(TMP)設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/8/01.jpg?raw=true)
 
 - Inspector内のTextMeshPro-Textに注目
 - Alignmentで文字の位置を中央寄せに変更
@@ -80,17 +80,17 @@ Rayとの相互作用を実現するため、オブジェクトにRayとの相�
 - **TextMeshPro -> string text**をクリック
 - ドロップダウンメニューの下に表示されるテキストエリアにHover開始時に表示したいテキストを入力(例: Hover)
 
-![イベント設定画面](./materials/8/02.jpg)
+![イベント設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/8/02.jpg?raw=true)
 
 - 上記の操作でHover(ポインティング)開始時にHoverと表示されるようになります。同じ要領で下記のイベントで表示するテキストを設定  
   **When Unhover() :** Un-Hover  
   **When  Select() :** Select  
   **When Unselect() :** Un-Select
 
-![全イベント設定画面](./materials/8/03.jpg)
+![全イベント設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/8/03.jpg?raw=true)
 
 動作確認をすると冒頭に掲載した動画のようにRayの交差開始と終了時にHverまたはUn-Hover、指でのピンチまたはコントローラのトリガー押下の開始・終了時にはSelect、Un-Selectと表示されます。
 
 ## 5. Meta XR SDKに関する記事一覧はこちら
 
-[はじめようMeta XR SDKでQuestアプリ開発](0-main.md)
+[Meta XR SDK連載目次](0-main.md)

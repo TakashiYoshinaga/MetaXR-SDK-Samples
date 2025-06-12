@@ -37,7 +37,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
   **Packages/com.meta.xr.sdk.interaction.ovr/Runtime/Sample/Prefabs/**  
   *Projectタブの下方にフォルダ名が表示されます
 
-![PalmMenuプレハブ選択画面](./materials/11/00.jpg)
+![PalmMenuプレハブ選択画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/11/00.jpg?raw=true)
 
 - PalmMenuプレハブをHierarchyにドラッグ&ドロップ
 - Hierarchy内の何もないところを右クリック
@@ -60,7 +60,7 @@ PalmMenuには手のトラッキング状態と連動するためのHand Refが�
 - OVRCameraRigオブジェクトの子要素の**OVRInteractionComprehensive**を開く
 - その子要素に**LeftInteractions**があることを確認
 
-![LeftInteractions確認画面](./materials/11/01.jpg)
+![LeftInteractions確認画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/11/01.jpg?raw=true)
 
 - PalmMenuをクリック
 - 1つ目のHand RefのHandに**LeftInteractions**をドラッグ&ドロップ
@@ -82,7 +82,7 @@ PalmMenuには手のトラッキング状態と連動するためのHand Refが�
 - さらに**LeftInteractions -> Interactors -> Hand**の順に子要素を開く
 - Handの子要素に**HandPokeInteractor**があることを確認
 
-![HandPokeInteractor確認画面](./materials/11/02.jpg)
+![HandPokeInteractor確認画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/11/02.jpg?raw=true)
 
 - PalmMenuをクリック
 - Dominant Hand Game Object Filterの**LeftHandedGameObjects**直下のElement 0に**HandPokeInteractor**をドラッグ&ドロップ
@@ -102,7 +102,7 @@ Dominant Hand Game Object FilterのLeft Handでは、左手に関連づけられ
 - **Left Hand**の横のエリアにPalmMenuをドラッグ&ドロップ
 - ダイアログが表示されるので、**LeftInteractionsと関連づけられたHandRef**を選択
 
-![HandRef選択ダイアログ](./materials/11/03.jpg)
+![HandRef選択ダイアログ](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/11/03.jpg?raw=true)
 
 ## 4. 表示オブジェクトの設定
 
@@ -142,7 +142,7 @@ PalmMenuプレハブではあらかじめ用意されたオブジェクトの操
 - **Active State**にMenuオブジェクトをドラッグ&ドロップ
 - 下記のダイアログが表示された場合、**TransformRecognizerActiveState**を選択
 
-![ActiveState選択ダイアログ](./materials/11/04.jpg)
+![ActiveState選択ダイアログ](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/11/04.jpg?raw=true)
 
 - MenuオブジェクトのInspectorで**SelectorUnityEventWrapper**を見つける
 - **When Unselected**で設定されているイベントを - ボタンで削除
@@ -155,10 +155,10 @@ PalmMenuプレハブではあらかじめ用意されたオブジェクトの操
 - **GameObject -> SetActive**をクリック
 - チェックを**Off**
 
-![イベント設定画面](./materials/11/05.jpg)
+![イベント設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/11/05.jpg?raw=true)
 
 これで手のひらを自分に向けたときにのみメニューが表示されるようになります。
 
 ## 7. Meta XR SDKに関する記事一覧はこちら
 
-[はじめようMeta XR SDKでQuestアプリ開発](0-main.md)
+[Meta XR SDK連載目次](0-main.md)

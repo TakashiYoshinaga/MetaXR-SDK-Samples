@@ -36,7 +36,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 - さらにDistance Grab Interactableの**Rigidbody**にCubeをドラッグ&ドロップ  
   *前の記事でCubeに追加したRigidbodyを割り当てることでコントローラの先のポインタとCubeとの接触検知が利用される
 
-![Distance Grab Interactable設定画面](./materials/7/00.jpg)
+![Distance Grab Interactable設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/7/00.jpg?raw=true)
 
 **[手でつかむ]**
 
@@ -47,7 +47,7 @@ GitHubで公開している[サンプル](https://github.com/TakashiYoshinaga/Me
 - さらにDistance Hand Grab Interactableの**Rigidbody**にCubeをドラッグ&ドロップ  
   *前の記事でCubeに追加したRigidbodyを割り当てることで手の先のポインタとCubeとの接触検知が利用される
 
-![Distance Hand Grab Interactable設定画面](./materials/7/01.jpg)
+![Distance Hand Grab Interactable設定画面](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/7/01.jpg?raw=true)
 
 **[注意！]**
 
@@ -98,7 +98,7 @@ OVRCameraRigオブジェクトにアタッチされたOVR ManagerのHand Trackin
   *GripButtonが不要な場合はGripButtonのチェックを外す
 - 左手のコントローラ(LeftInteractions)についても同様の操作を行うことで、つかむ際に使用するボタンを設定可能
 
-![Trigger Manipulation](./materials/7/02.jpg)
+![Trigger Manipulation](https://github.com/TakashiYoshinaga/MetaXR-SDK-Samples/blob/materials/Documents/materials/7/02.jpg?raw=true)
 
 ## 5. 手の挙動の微調整 (オプション)
 
