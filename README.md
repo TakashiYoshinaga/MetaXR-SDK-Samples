@@ -38,4 +38,4 @@ To test this feature, open the **Settings** on your **Quest 3 / Quest 3S** and p
 https://tks-yoshinaga.hatenablog.com/entry/2024/04/13/195853  
 
 [Japanese]  
-https://tks-yoshinaga.hatenablog.com/entry/quest-dev-index
+[https://tks-yoshinaga.hatenablog.com/entry/quest-dev-index](https://qiita.com/Tks_Yoshinaga/items/32bfe7567abbb2ac9521)
