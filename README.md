@@ -35,7 +35,7 @@ To test this feature, open the **Settings** on your **Quest 3 / Quest 3S** and p
 
 # Tutorial
 [English]  
-https://tks-yoshinaga.hatenablog.com/entry/2024/04/13/195853  
+[https://meta-xr-sdk.hashnode.dev/introduction](https://meta-xr-sdk.hashnode.dev/introduction)
 
 [Japanese]  
 [https://qiita.com/Tks_Yoshinaga/items/32bfe7567abbb2ac9521](https://qiita.com/Tks_Yoshinaga/items/32bfe7567abbb2ac9521)
