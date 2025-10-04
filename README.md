@@ -28,8 +28,7 @@
 
 ### 10-SpatialMesh-AR
 [Notice!]  
-To test this feature, open the **Settings** on your **Quest 3 / Quest 3S** and perform a pre-room scan following the steps below:  
-**Environment setup** → **Space setup** → **Set up**  
+To test this feature, open the **Settings** on your **Quest 3 / Quest 3S** 
   
 [![](https://img.youtube.com/vi/UQFJ9Kt1Sz4/0.jpg)](https://www.youtube.com/watch?v=UQFJ9Kt1Sz4)
 
