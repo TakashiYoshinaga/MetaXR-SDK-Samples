@@ -32,6 +32,9 @@ To test this feature, open the **Settings** on your **Quest 3 / Quest 3S**
   
 [![](https://img.youtube.com/vi/UQFJ9Kt1Sz4/0.jpg)](https://www.youtube.com/watch?v=UQFJ9Kt1Sz4)
 
+### 11-Depth-AR
+[![](https://img.youtube.com/vi/kWmAoExbc0o/0.jpg)](https://www.youtube.com/watch?v=kWmAoExbc0o)
+
 # Tutorial
 [English]  
 [https://meta-xr-sdk.hashnode.dev/introduction](https://meta-xr-sdk.hashnode.dev/introduction)
