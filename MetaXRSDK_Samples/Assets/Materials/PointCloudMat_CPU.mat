@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DepthMaterial
-  m_Shader: {fileID: 4800000, guid: 85143af491a15ae4b9526c2514c92173, type: 3}
+  m_Name: PointCloudMat_CPU
+  m_Shader: {fileID: 4800000, guid: fe84fce68f8b664488e12bb2c5b2da2a, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []

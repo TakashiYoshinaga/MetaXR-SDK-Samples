@@ -1,17 +1,19 @@
 using Meta.XR.BuildingBlocks.AIBlocks;
 using UnityEngine;
-using UnityEngine.Rendering;
 
+// GPU-oriented point cloud visualizer.
+// Prioritizes runtime performance by sampling the live environment depth texture directly in the shader.
+// Best when the goal is to keep the cloud updating every frame with minimal CPU-side work.
 [RequireComponent(typeof(MeshRenderer), typeof(MeshFilter))]
-public class DepthVisualizer : MonoBehaviour
+public class DepthVisualizerGpu : MonoBehaviour
 {
-    private enum DepthEyeSelection
+    protected enum DepthEyeSelection
     {
         Left = 0,
         Right = 1
     }
 
-    private static readonly int PointColorId = Shader.PropertyToID("_PointColor");
+    private static readonly int PointAlphaId = Shader.PropertyToID("_PointAlpha");
     private static readonly int PointSizeId = Shader.PropertyToID("_PointSize");
     private static readonly int DepthRangeId = Shader.PropertyToID("_DepthRange");
     private static readonly int InverseLocalReprojectionId = Shader.PropertyToID("_InverseLocalReprojection");
@@ -23,7 +25,7 @@ public class DepthVisualizer : MonoBehaviour
 
     [Header("Rendering")]
     [SerializeField] private DepthEyeSelection _eyeSelection = DepthEyeSelection.Left;
-    [SerializeField] private Color _pointColor = new(0.15f, 0.85f, 1f, 0.9f);
+    [SerializeField, Range(0f, 1f)] private float _pointAlpha = 0.9f;
     [SerializeField, Min(1f)] private float _pointSize = 2f;
     [SerializeField, Min(0f)] private float _minDepthMeters = 0.1f;
     [SerializeField, Min(0.01f)] private float _maxDepthMeters = 5f;
@@ -34,7 +36,8 @@ public class DepthVisualizer : MonoBehaviour
     private Mesh _pointMesh;
     private int _meshTextureSize;
 
-    private void Awake()
+    // When the component is created, validate required references and prepare the renderer/material state.
+    protected virtual void Awake()
     {
         if (_depthTextureAccess == null)
         {
@@ -59,14 +62,15 @@ public class DepthVisualizer : MonoBehaviour
         _meshFilter = GetComponent<MeshFilter>();
 
         _meshRenderer.enabled = false;
-        _meshRenderer.shadowCastingMode = ShadowCastingMode.Off;
+        _meshRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
         _meshRenderer.receiveShadows = false;
 
         EnsureMaterial();
         ApplyMaterialProperties();
     }
 
-    private void OnEnable()
+    // When the component becomes enabled, start listening for CPU depth frame updates.
+    protected virtual void OnEnable()
     {
         if (_depthTextureAccess != null)
         {
@@ -74,7 +78,8 @@ public class DepthVisualizer : MonoBehaviour
         }
     }
 
-    private void OnDisable()
+    // When the component becomes disabled, stop listening for CPU depth frame updates.
+    protected virtual void OnDisable()
     {
         if (_depthTextureAccess != null)
         {
@@ -82,7 +87,8 @@ public class DepthVisualizer : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
+    // When the component is destroyed, release subscriptions and runtime-generated resources.
+    protected virtual void OnDestroy()
     {
         if (_depthTextureAccess != null)
         {
@@ -100,7 +106,8 @@ public class DepthVisualizer : MonoBehaviour
         }
     }
 
-    private void OnValidate()
+    // When serialized values change in the editor, keep depth limits and render settings in a valid state.
+    protected virtual void OnValidate()
     {
         if (_maxDepthMeters < _minDepthMeters)
         {
@@ -108,10 +115,11 @@ public class DepthVisualizer : MonoBehaviour
         }
 
         ApplyMaterialProperties();
-        UpdateMeshBounds();
+        DepthPointCloudMeshUtility.UpdateBounds(_pointMesh, _maxDepthMeters);
     }
 
-    private void Update()
+    // When Unity updates the component each frame, request a fresh depth sample for live GPU rendering.
+    protected virtual void Update()
     {
         if (_depthTextureAccess == null)
         {
@@ -121,14 +129,11 @@ public class DepthVisualizer : MonoBehaviour
         _depthTextureAccess.RequestDepthSample();
     }
 
-    private void HandleDepthTextureUpdate(DepthTextureAccess.DepthFrameData depthFrameData)
+    // Receives the latest depth frame, prepares the reconstruction matrix for the selected eye,
+    // and updates the material so the shader can draw the current point cloud.
+    protected virtual void HandleDepthTextureUpdate(DepthTextureAccess.DepthFrameData depthFrameData)
     {
-        if (_depthTextureAccess == null)
-        {
-            return;
-        }
-
-        if (depthFrameData.ViewProjectionMatrix == null || depthFrameData.ViewProjectionMatrix.Length == 0)
+        if (_depthTextureAccess == null || depthFrameData.ViewProjectionMatrix == null || depthFrameData.ViewProjectionMatrix.Length == 0)
         {
             return;
         }
@@ -147,7 +152,10 @@ public class DepthVisualizer : MonoBehaviour
 
         if (_pointMesh == null || _meshTextureSize != textureSize)
         {
-            BuildPointMesh(textureSize);
+            _pointMesh = DepthPointCloudMeshUtility.BuildPointMesh(_pointMesh, textureSize);
+            _meshTextureSize = textureSize;
+            _meshFilter.sharedMesh = _pointMesh;
+            DepthPointCloudMeshUtility.UpdateBounds(_pointMesh, _maxDepthMeters);
         }
 
         var eyeIndex = ResolveEyeIndex();
@@ -159,7 +167,7 @@ public class DepthVisualizer : MonoBehaviour
         // If you do not need that separation, using ViewProjectionMatrix[eyeIndex].inverse directly would reconstruct
         // the points in world space immediately, and both this transform update and cameraLocalToWorld would be unnecessary.
         transform.SetPositionAndRotation(depthFrameData.CameraPose.position, depthFrameData.CameraPose.rotation);
-        
+
         var cameraLocalToWorld = Matrix4x4.TRS(
             depthFrameData.CameraPose.position,
             depthFrameData.CameraPose.rotation,
@@ -174,6 +182,8 @@ public class DepthVisualizer : MonoBehaviour
         _meshRenderer.enabled = true;
     }
 
+    // Creates a runtime material instance from the inspector-assigned template so per-object values
+    // can be changed without modifying the shared material asset.
     private void EnsureMaterial()
     {
         if (_runtimeMaterial != null)
@@ -189,12 +199,13 @@ public class DepthVisualizer : MonoBehaviour
 
         _runtimeMaterial = new Material(_pointCloudMaterial)
         {
-            name = $"{nameof(DepthVisualizer)} Runtime Material"
+            name = $"{GetType().Name} Runtime Material"
         };
 
         _meshRenderer.sharedMaterial = _runtimeMaterial;
     }
 
+    // Pushes the current inspector-controlled rendering parameters into the runtime material.
     private void ApplyMaterialProperties()
     {
         if (_runtimeMaterial == null)
@@ -202,63 +213,12 @@ public class DepthVisualizer : MonoBehaviour
             return;
         }
 
-        _runtimeMaterial.SetColor(PointColorId, _pointColor);
+        _runtimeMaterial.SetFloat(PointAlphaId, _pointAlpha);
         _runtimeMaterial.SetFloat(PointSizeId, _pointSize);
         _runtimeMaterial.SetVector(DepthRangeId, new Vector4(_minDepthMeters, _maxDepthMeters, 0f, 0f));
     }
 
-    private void BuildPointMesh(int textureSize)
-    {
-        if (_pointMesh != null)
-        {
-            Destroy(_pointMesh);
-        }
-
-        var pointCount = textureSize * textureSize;
-        var positions = new Vector3[pointCount];
-        var uvs = new Vector2[pointCount];
-        var indices = new int[pointCount];
-        var inverseTextureSize = 1f / textureSize;
-
-        var index = 0;
-        for (var y = 0; y < textureSize; y++)
-        {
-            var v = (y + 0.5f) * inverseTextureSize;
-            for (var x = 0; x < textureSize; x++)
-            {
-                positions[index] = Vector3.zero;
-                uvs[index] = new Vector2((x + 0.5f) * inverseTextureSize, v);
-                indices[index] = index;
-                index++;
-            }
-        }
-
-        _pointMesh = new Mesh
-        {
-            name = $"DepthPointCloud_{textureSize}"
-        };
-        _pointMesh.indexFormat = IndexFormat.UInt32;
-        _pointMesh.vertices = positions;
-        _pointMesh.uv = uvs;
-        _pointMesh.SetIndices(indices, MeshTopology.Points, 0, calculateBounds: false);
-        _pointMesh.UploadMeshData(false);
-
-        _meshTextureSize = textureSize;
-        _meshFilter.sharedMesh = _pointMesh;
-        UpdateMeshBounds();
-    }
-
-    private void UpdateMeshBounds()
-    {
-        if (_pointMesh == null)
-        {
-            return;
-        }
-
-        var extent = Mathf.Max(1f, _maxDepthMeters);
-        _pointMesh.bounds = new Bounds(Vector3.zero, Vector3.one * extent * 4f);
-    }
-
+    // Converts the serialized left/right choice into the corresponding eye slice index.
     private int ResolveEyeIndex()
     {
         return _eyeSelection == DepthEyeSelection.Right ? 1 : 0;
