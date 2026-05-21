@@ -27,9 +27,6 @@
 [![](https://img.youtube.com/vi/1zgUlxVs3aE/0.jpg)](https://www.youtube.com/watch?v=1zgUlxVs3aE)
 
 ### 10-SpatialMesh-AR
-[Notice!]  
-To test this feature, open the **Settings** on your **Quest 3 / Quest 3S** 
-  
 [![](https://img.youtube.com/vi/UQFJ9Kt1Sz4/0.jpg)](https://www.youtube.com/watch?v=UQFJ9Kt1Sz4)
 
 ### 11-Depth-AR/VR
