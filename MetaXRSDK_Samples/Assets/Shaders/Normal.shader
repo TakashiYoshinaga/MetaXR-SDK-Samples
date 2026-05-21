@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Normal"
+﻿Shader "TryAR/Unlit/Normal"
 {
     Properties
     {
