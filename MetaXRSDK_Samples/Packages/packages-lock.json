@@ -1,11 +1,11 @@
 {
   "dependencies": {
     "com.meta.xr.mrutilitykit": {
-      "version": "201.0.0",
+      "version": "203.0.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.meta.xr.sdk.core": "201.0.0",
+        "com.meta.xr.sdk.core": "203.0.0",
         "com.unity.textmeshpro": "3.0.6",
         "com.unity.ai.navigation": "1.1.4",
         "com.unity.nuget.newtonsoft-json": "3.0.2"
@@ -13,18 +13,18 @@
       "url": "https://packages.unity.com"
     },
     "com.meta.xr.sdk.all": {
-      "version": "201.0.0",
+      "version": "203.0.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.meta.xr.sdk.core": "201.0.0",
+        "com.meta.xr.sdk.core": "203.0.0",
         "com.meta.xr.sdk.audio": "85.0.0",
         "com.meta.xr.sdk.voice": "85.0.0",
-        "com.meta.xr.sdk.haptics": "201.0.0",
-        "com.meta.xr.mrutilitykit": "201.0.0",
-        "com.meta.xr.sdk.platform": "201.0.0",
-        "com.meta.xr.sdk.interaction": "201.0.0",
-        "com.meta.xr.sdk.interaction.ovr": "201.0.0"
+        "com.meta.xr.sdk.haptics": "203.0.0",
+        "com.meta.xr.mrutilitykit": "203.0.0",
+        "com.meta.xr.sdk.platform": "203.0.0",
+        "com.meta.xr.sdk.interaction": "203.0.0",
+        "com.meta.xr.sdk.interaction.ovr": "203.0.0"
       },
       "url": "https://packages.unity.com"
     },
@@ -36,7 +36,7 @@
       "url": "https://packages.unity.com"
     },
     "com.meta.xr.sdk.core": {
-      "version": "201.0.0",
+      "version": "203.0.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -51,16 +51,16 @@
       "url": "https://packages.unity.com"
     },
     "com.meta.xr.sdk.haptics": {
-      "version": "201.0.0",
+      "version": "203.0.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.meta.xr.sdk.core": "201.0.0"
+        "com.meta.xr.sdk.core": "203.0.0"
       },
       "url": "https://packages.unity.com"
     },
     "com.meta.xr.sdk.interaction": {
-      "version": "201.0.0",
+      "version": "203.0.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -70,22 +70,23 @@
       "url": "https://packages.unity.com"
     },
     "com.meta.xr.sdk.interaction.ovr": {
-      "version": "201.0.0",
+      "version": "203.0.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.meta.xr.sdk.core": "201.0.0",
-        "com.meta.xr.sdk.interaction": "201.0.0"
+        "com.meta.xr.sdk.core": "203.0.0",
+        "com.meta.xr.sdk.interaction": "203.0.0"
       },
       "url": "https://packages.unity.com"
     },
     "com.meta.xr.sdk.platform": {
-      "version": "201.0.0",
+      "version": "203.0.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.ugui": "1.0.0",
-        "com.unity.inputsystem": "1.7.0"
+        "com.unity.inputsystem": "1.7.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
       },
       "url": "https://packages.unity.com"
     },

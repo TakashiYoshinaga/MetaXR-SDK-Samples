@@ -305,6 +305,28 @@ MonoBehaviour:
   targetOpenXRApiVersion: 
   required: 0
   customRuntimeLoaderName: 
+--- !u!114 &-6769618468381661224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b213d3e3c7f3109449eb46a4c8ee42f0, type: 3}
+  m_Name: XrPerformanceSettingsFeature WebGL
+  m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.Features.Extensions.PerformanceSettings.XrPerformanceSettingsFeature
+  m_enabled: 0
+  nameUi: XR Performance Settings
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.extension.performance_settings
+  openxrExtensionStrings: XR_EXT_performance_settings
+  company: Unity
+  priority: 0
+  targetOpenXRApiVersion: 
+  required: 0
+  customRuntimeLoaderName: 
 --- !u!114 &-6704649551498648348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,8 +439,8 @@ MonoBehaviour:
     XR_EXT_spatial_entity XR_EXT_spatial_marker_tracking XR_META_environment_raycast
     XR_EXT_future XR_METAX2_debug_utils_region_profiling XR_METAX3_debug_utils_region_profiling
     XR_EXTX2_stationary_reference_space XR_META_recommended_layer_resolution XR_EXT_local_floor
-    XR_METAX1_passthrough_camera_data XR_METAX1_hand_tracking_frequency_hint XR_METAX1_hand_tracking_unextrapolated_poses
-    XR_METAX1_hand_tracking_wide_motion_mode2
+    XR_METAX1_passthrough_camera_data XR_META_hand_tracking_frequency_hint XR_META_hand_tracking_unextrapolated_poses
+    XR_META_hand_tracking_wide_motion_mode2
   company: Meta
   priority: 0
   targetOpenXRApiVersion: 1.1.45
@@ -557,6 +579,35 @@ MonoBehaviour:
   targetOpenXRApiVersion: 
   required: 0
   customRuntimeLoaderName: 
+--- !u!114 &-5315823509250364890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a1f07dc5afe854f9f12a4194aca3fb, type: 3}
+  m_Name: WebGL
+  m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.OpenXRSettings
+  features:
+  - {fileID: -6769618468381661224}
+  customLoaderName: 
+  m_renderMode: 1
+  m_latencyOptimization: 0
+  m_autoColorSubmissionMode: 1
+  m_colorSubmissionModes:
+    m_List: 00000000
+  m_depthSubmissionMode: 0
+  m_spacewarpMotionVectorTextureFormat: 0
+  m_optimizeBufferDiscards: 0
+  m_symmetricProjection: 0
+  m_optimizeMultiviewRenderRegions: 0
+  m_multiviewRenderRegionsOptimizationMode: 0
+  m_hasMigratedMultiviewRenderRegionSetting: 1
+  m_foveatedRenderingApi: 0
+  m_useOpenXRPredictedTime: 0
 --- !u!114 &-4953280251362786775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -670,8 +721,8 @@ MonoBehaviour:
     XR_EXT_spatial_entity XR_EXT_spatial_marker_tracking XR_META_environment_raycast
     XR_EXT_future XR_METAX2_debug_utils_region_profiling XR_METAX3_debug_utils_region_profiling
     XR_EXTX2_stationary_reference_space XR_META_recommended_layer_resolution XR_EXT_local_floor
-    XR_METAX1_passthrough_camera_data XR_METAX1_hand_tracking_frequency_hint XR_METAX1_hand_tracking_unextrapolated_poses
-    XR_METAX1_hand_tracking_wide_motion_mode2
+    XR_METAX1_passthrough_camera_data XR_META_hand_tracking_frequency_hint XR_META_hand_tracking_unextrapolated_poses
+    XR_META_hand_tracking_wide_motion_mode2
   company: Meta
   priority: 0
   targetOpenXRApiVersion: 1.1.45
@@ -1288,11 +1339,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0ebc320a151d3408ea1e9fce54d40e, type: 3}
   m_Name: OpenXR Package Settings
   m_EditorClassIdentifier: 
-  Keys: 010000000400000007000000
+  Keys: 0100000004000000070000000d000000
   Values:
   - {fileID: -2108183311810238053}
   - {fileID: 5910076496705106212}
   - {fileID: -1379129377130265654}
+  - {fileID: -5315823509250364890}
 --- !u!114 &109123413224367106
 MonoBehaviour:
   m_ObjectHideFlags: 0
