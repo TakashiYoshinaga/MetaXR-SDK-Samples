@@ -33,8 +33,5 @@
 [![](https://img.youtube.com/vi/kWmAoExbc0o/0.jpg)](https://www.youtube.com/watch?v=kWmAoExbc0o)
 
 # Tutorial
-[English]  
-[https://meta-xr-sdk.hashnode.dev/introduction](https://meta-xr-sdk.hashnode.dev/introduction)
-
 [Japanese]  
 [https://qiita.com/Tks_Yoshinaga/items/32bfe7567abbb2ac9521](https://qiita.com/Tks_Yoshinaga/items/32bfe7567abbb2ac9521)
