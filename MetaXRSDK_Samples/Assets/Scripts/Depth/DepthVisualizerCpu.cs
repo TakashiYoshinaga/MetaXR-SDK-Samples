@@ -32,6 +32,7 @@ public class DepthVisualizerCpu : MonoBehaviour
     [SerializeField, Min(0.01f)] private float _maxDepthMeters = 5f;
     [Header("Optional")]
     [SerializeField] private bool _canFreezeUpdateByController = false;
+    [SerializeField] private OVRInput.RawButton _freezeButton = OVRInput.RawButton.A;
     private MeshRenderer _meshRenderer;
     private MeshFilter _meshFilter;
     private Material _runtimeMaterial;
@@ -132,7 +133,7 @@ public class DepthVisualizerCpu : MonoBehaviour
         {
             return;
         }
-        if (_canFreezeUpdateByController && OVRInput.GetDown(OVRInput.RawButton.A))
+        if (_canFreezeUpdateByController && OVRInput.GetDown(_freezeButton))
         {
             _isFrozen = !_isFrozen;
         }
