@@ -35,4 +35,8 @@ If the point cloud does not appear, go to Settings > Privacy & Safety > Installe
 
 # Tutorial
 [Japanese]  
-[https://qiita.com/Tks_Yoshinaga/items/32bfe7567abbb2ac9521](https://qiita.com/Tks_Yoshinaga/items/32bfe7567abbb2ac9521)
+[https://qiita.com/Tks_Yoshinaga/items/32bfe7567abbb2ac9521](https://qiita.com/Tks_Yoshinaga/items/32bfe7567abbb2ac9521)  
+
+## Support
+If you find this project useful, you can support me via PayPal:  
+[![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/TakashiYoshinaga)  
